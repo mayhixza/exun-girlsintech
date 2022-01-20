@@ -35,8 +35,11 @@
                 <li><a href="">Student Work</a></li>
             </div>
             <div class="nav2">
-                <li><a href="/auth/google">Login</a></li>
+                <% if (authed) { %>
                 <li><a href="/auth/logout">Logout</a></li>
+                <% } else { %>
+                <li><a href="/auth/google">Login</a></li>
+                <% } %>
             </div>
         </nav>
         <div class="top">

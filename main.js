@@ -47,7 +47,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-    res.render("about");
+    let authed = false;
+    if (req.query.username) authed = true;
+    res.render("about", { authed });
 });
 
 app.use("/auth", require("./routes/auth"));
