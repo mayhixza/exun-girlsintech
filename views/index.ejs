@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gentium+Basic:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <title>Yale-School of Art</title>
+    </head>
+    <body>
+        <div class="top-container">
+            <div class="text-cont">
+                <nav>
+                    <div class="nav1">
+                        <li><a href="">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="">Academics</a></li>
+                        <li><a href="">Apply</a></li>
+                        <li><a href="">Student Work</a></li>
+                    </div>
+                    <div class="nav2">
+                        <% if (authed) { %>
+                        <li><a href="/auth/logout">Logout</a></li>
+                        <% } else { %>
+                        <li><a href="/auth/google">Login</a></li>
+                        <% } %>
+                    </div>
+                </nav>
+                <div class="main-text">
+                    <h1 data-aos="fade-down">Yale School of Art</h1>
+                    <p>
+                        The Yale School of Art is a graduate school that confers
+                        MFAs in Graphic Design, Painting/Printmaking,
+                        Photography, and Sculpture; and offers
+                        undergraduate-level art courses to Yale College
+                        students. Our website exists as an ongoing collaborative
+                        experiment in digital publishing and information
+                        sharing. It functions as a wiki—all members of the
+                        School of Art community have the ability to add new, and
+                        edit most existing content.
+                    </p>
+                    <span class="apply"><a href="">Apply Now</a></span>
+                    <span class="explore"
+                        >Explore<i class="fas fa-chevron-right right"></i
+                    ></span>
+                </div>
+            </div>
+        </div>
+        <div class="graduate">
+            <div class="grad-text">
+                <h1 data-aos="fade-right">Graduate Degrees</h1>
+                <p data-aos="fade-right" data-aos-delay="500">
+                    The Yale School of Art is a graduate school that confers
+                    Master of Fine Arts Degrees in Graphic Design,
+                    Painting/Printmaking, Photography, and Sculpture.
+                </p>
+                <div
+                    class="search-box"
+                    data-aos="fade-right"
+                    data-aos-delay="700"
+                >
+                    <input name="search" class="search-grad" type="text" />
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="degrees">
+                <div class="gradient">
+                    <a href="/">
+                        <div class="card" data-aos="fade-up">
+                            <img src="/assets/d1.png" />
+                            <p>MFA Graphic Design</p>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    <a href="/">
+                        <div
+                            class="card"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                        >
+                            <img src="/assets/d2.png" />
+                            <p>MFA Painting</p>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    <a href="/">
+                        <div
+                            class="card"
+                            data-aos="fade-up"
+                            data-aos-delay="700"
+                        >
+                            <img src="/assets/d3.png" />
+                            <p>MFA Print Making</p>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    <a href="/">
+                        <div
+                            class="card"
+                            data-aos="fade-up"
+                            data-aos-delay="900"
+                        >
+                            <img src="/assets/d4.png" />
+                            <p>MFA Sculpture</p>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    <a href="/">
+                        <div
+                            class="card"
+                            data-aos="fade-up"
+                            data-aos-delay="1100"
+                        >
+                            <img src="/assets/d5.png" />
+                            <p>MFA Photography</p>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="openHouse">
+            <h1>2021 Admissions Open House</h1>
+            <div class="vid">
+                <iframe
+                    src="https://www.youtube.com/embed/1RSsXloFmng"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p>
+                The four separate program-specific events—one for each of the
+                School’s areas of graduate study in Sculpture,
+                Painting/Printmaking, Graphic D esign, and Photography—are
+                available online in six edited videos. Beginning with an
+                introduction to MFA admissions across the School of Art, the
+                2021 Admissions Open House playlist then contains the p
+                rogram-specific information featuring each department’s faculty
+                and students before concluding with an informational session on
+                financial aid.
+            </p>
+            <p>
+                We recommend that interested applicants watch the first video,
+                “Dean’s Welcome & Preparing Your Application,” followed by the
+                video(s) specific to the programs they’re interested in applying
+                to, and conclude with “Financing Your Education.”
+            </p>
+            <p>
+                <i
+                    >2021 Open House identity created by Alvin Ashiatey and
+                    Churong Mao, Graphic Design MFAs ‘22.</i
+                >
+            </p>
+        </div>
+        <div class="updates">
+            <h1>School News and Updates</h1>
+            <div class="up-cont">
+                <div class="up1-wrap">
+                    <div class="text-up" data-aos="fade-right">
+                        <p class="date">December 8, 2021</p>
+                        <p>
+                            The Yale School of Art mourns the passing of
+                            <i><b>Greg Tate</b></i>
+                        </p>
+                        <span class="m"
+                            ><a href="">Read More</a
+                            ><i class="fas fa-chevron-right fonta"></i
+                        ></span>
+                    </div>
+                    <div class="text-up" data-aos="fade-right">
+                        <p class="date">November 30, 2021</p>
+                        <p>News from Haven</p>
+                        <span class="m"
+                            ><a href="">Read More</a
+                            ><i class="fas fa-chevron-right fonta"></i
+                        ></span>
+                    </div>
+                </div>
+                <div class="up2-wrap" data-aos="fade-left">
+                    <iframe
+                        src="https://www.youtube.com/embed/fCL5ooBr3PY"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                    <p>Watch his 2021 commencement address to MFA graduates</p>
+                </div>
+            </div>
+            <div class="flex">
+                <p class="news">
+                    Read More News<i class="fas fa-chevron-right more"></i>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div class="newsletter">
+                <p>Subscribe to our newsletter</p>
+                <div class="sub">
+                    <input
+                        type="text"
+                        placeholder="Email"
+                        name="email"
+                        class="email"
+                    />
+                    <button type="submit" class="subBtn">Subscribe</button>
+                </div>
+                <p class="e">© 2022</p>
+            </div>
+            <div class="link-wrap">
+                <div class="link1 link">
+                    <a href="/">Support the School</a>
+                    <a href="/">Visiting</a>
+                    <a href="/">Accessibility @ Yale</a>
+                </div>
+                <div class="link2 link">
+                    <a href="/">Contact</a>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                delay: 300, // values from 0 to 3000, with step 50ms
+                duration: 500, // values from 0 to 3000, with step 50ms
+                once: true,
+            });
+        </script>
+    </body>
+</html>

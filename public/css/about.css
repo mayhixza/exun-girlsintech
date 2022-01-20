@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #A4D7D7;
+    --orange: #E7731D;
+    --green: #60B28F;
+    --yellow: #F5E5AB;
+    --blue: #1F1938;
+    --iorange: #F39C67;
+}
+
+body {
+    font-family: 'Gentium Basic', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+
+nav, .nav1, .nav2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 0 7vw;
+    background-color: var(--blue);
+}
+
+nav li {
+    list-style: none;
+    margin: 4vh 2vw; 
+    font-size: 1.3vw;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: var(--iorange)
+}
+
+.top {
+    display: flex;  
+    justify-content: center;  
+    background-color: var(--blue);
+    color: white;
+}
+
+.top-text {
+    margin: 8vh 0 5vh 7vw;
+}
+
+.top h1 {
+    font-size: 3vw;
+}
+
+.top p {    
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1vw;
+    margin: 4vh 0;
+    padding-right: 4vw;
+}
+
+.top img {
+    width: 40vw;
+    height: 100%;
+    margin-right: 7vw;
+    margin: 15vh 7vw 5vh 0;
+}
+
+.mission {
+    display: flex;  
+    justify-content: center;  
+    margin: 15vh 0;
+}
+
+.mission img {
+    height: 70vh;
+    margin: auto 0;
+    margin-left: 7vw;
+}
+
+.mission .m-text {
+    margin: auto 4vw;
+}
+
+.mission h1 {    
+    font-size: 3vw;
+}
+
+.mission p {    
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1vw;
+    margin: 4vh 0;
+    padding-right: 4vw;
+}
+
+/* Footer  */
+
+footer {
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 7vw;
+}
+
+footer p {
+    font-size: 2vw;
+}
+
+.newsletter{
+    margin: auto 0;
+}
+
+footer .e {
+    font-size: 1.2vw;
+}
+
+footer .sub {
+    display: flex;
+    height: 6vh;
+    margin: 3vh 0;
+}
+
+footer input {
+    width: 18vw;
+    margin-right: 1vw;
+    padding: 0 1vw;
+    border: 0;
+}
+
+footer input:hover, footer input:active{
+    border: 0;
+    outline: 0;
+}
+
+footer button {
+    background-color: var(--iorange);
+    border: 0;
+    color: white;
+    padding: 0.6vw 1.2vw;
+}
+
+footer button:hover {
+    cursor: pointer;
+}
+
+.link-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45vw;
+    
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 2vw;
+}
+
+.link a {
+    margin: 2vh 0;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
